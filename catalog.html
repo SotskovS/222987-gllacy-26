@@ -29,6 +29,71 @@
         <li><a href="#">Каталог</a></li>
         <li>Сливочное</li>
       </ul>
+
+      <section class="filters">
+        <div>
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <ul>
+              <li>по популярности</li>
+            </ul>
+          </fieldset>
+          
+          <fieldset>
+            <legend> Цена: <span>100</span> руб. - <span>500</span> руб.</legend>
+            <div class="range-filter">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Жирность:</legend>
+            <li>
+              <input type="radio" id="zero">
+              <label for="zero">0%</label>
+            </li>
+            <li>
+                <input type="radio" id="ten" checked>
+                <label for="ten">до 10%</label>
+            </li>
+            <li>
+              <input type="radio" id="thirty">
+              <label for="thirty">до 30%</label>
+            </li>
+            <li><input type="radio" id="moreThirty">
+              <label for="moreThirty">выше 30%</label></li>
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="choko" checked>
+                <label for="choko">Шоколадные</label>
+              </li>
+              <li>
+                  <input type="checkbox" id="sugar" checked>
+                  <label for="sugar">Сахарные присыпки</label>
+              </li>
+              <li>
+                  <input type="checkbox" id="fruit">
+                  <label for="fruit">Фрукты</label>
+              </li>
+              <li>
+                  <input type="checkbox" id="syrop">
+                  <label for="syrop">Сиропы</label>
+              </li>
+              <li>
+                  <input type="checkbox" id="jam">
+                  <label for="jam">Джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <button type="button">Применить</button>
+      </section>
+      </section>
       <section>
         <ul>
           <li>
@@ -118,8 +183,15 @@
 
         </ul>    
       </section>
-      <section>
-        
+
+      <div class="pagination">
+          <ul class="pagination-list">
+              <li class="pagination-link page-active"><a>1</a></li>
+              <li class="pagination-link"><a href="#">2</a></li>
+              <li class="pagination-link"><a href="#">3</a></li>
+              <li class="pagination-link"><a href="#">></a></li>
+          </ul>
+      </div>
     </main>
 
     <footer>
