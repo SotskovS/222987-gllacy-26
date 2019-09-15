@@ -9,18 +9,18 @@
       <img src="#" width="154" height="64" alt="Логотип ГлейсиШоп">
       <nav>
         <ul>
-          <li>Каталог</li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#"></a>Доставка и оплата</li>
           <li><a href="#"></a>О Компании</li>
         </ul>
-        <div>
-          <button type="button"></button>
-          <button type="button">Вход</button>
-          <button type="button">Пусто</button>
-        </div>
-        <p>С 10 до 20 ежедневно</p>
-        <p>8 812 450-25-25</p>
-      </nav>
+      </nav>  
+      <div>
+        <button type="button"></button>
+        <button type="button">Вход</button>
+        <button type="button">Пусто</button>
+      </div>
+      <p>С 10 до 20 ежедневно</p>
+      <p>8 812 450-25-25</p>
     </header>
     <main>
       <h1>Сливочное мороженое</h1>    
@@ -31,6 +31,7 @@
       </ul>
 
       <section class="filters">
+        <h2>Фильтры</h2>
         <div>
           <fieldset>
             <legend>Сортировка:</legend>
@@ -47,20 +48,24 @@
 
           <fieldset>
             <legend>Жирность:</legend>
-            <li>
-              <input type="radio" id="zero">
-              <label for="zero">0%</label>
-            </li>
-            <li>
-                <input type="radio" id="ten" checked>
-                <label for="ten">до 10%</label>
-            </li>
-            <li>
-              <input type="radio" id="thirty">
-              <label for="thirty">до 30%</label>
-            </li>
-            <li><input type="radio" id="moreThirty">
-              <label for="moreThirty">выше 30%</label></li>
+            <ul>
+              <li>
+                <input type="radio" id="zero">
+                <label for="zero">0%</label>
+              </li>
+              <li>
+                  <input type="radio" id="ten" checked>
+                  <label for="ten">до 10%</label>
+              </li>
+              <li>
+                <input type="radio" id="thirty">
+                <label for="thirty">до 30%</label>
+              </li>
+              <li>
+                <input type="radio" id="moreThirty">
+                <label for="moreThirty">выше 30%</label>
+              </li>
+            </ul>
           </fieldset>
         </div>
 
@@ -92,7 +97,6 @@
           </fieldset>
         </div>
         <button type="button">Применить</button>
-      </section>
       </section>
       <section>
         <ul>
@@ -184,14 +188,13 @@
         </ul>    
       </section>
 
-      <div class="pagination">
-          <ul class="pagination-list">
-              <li class="pagination-link page-active"><a>1</a></li>
-              <li class="pagination-link"><a href="#">2</a></li>
-              <li class="pagination-link"><a href="#">3</a></li>
-              <li class="pagination-link"><a href="#">></a></li>
-          </ul>
-      </div>
+      <ul class="pagination">
+        <li class="pagination-link page-active"><a>1</a></li>
+        <li class="pagination-link"><a href="#">2</a></li>
+        <li class="pagination-link"><a href="#">3</a></li>
+        <li class="pagination-link"><a href="#">></a></li>
+      </ul>
+      
     </main>
 
     <footer>
