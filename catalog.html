@@ -9,7 +9,14 @@
       <img src="img/logo.svg" width="154" height="64" alt="Логотип ГлейсиШоп">
       <nav>
         <ul>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>Каталог</li>
+          <select name="catalog" id="catalog">
+            <option value="new">Новинки</option>
+            <option value="cream">Сливочное</option>
+            <option value="sorbet" selected>Щербеты</option>
+            <option value="fruit_ice">Фруктовый лед</option>
+            <option value="melorin">Мелорин</option>
+          </select>
           <li><a href="#"></a>Доставка и оплата</li>
           <li><a href="#"></a>О Компании</li>
         </ul>
@@ -17,7 +24,34 @@
       <div>
         <button type="button"></button>
         <button type="button">Вход</button>
-        <button type="button">Пусто</button>
+        <form action="#">
+          <input type="email" name="email" id="email" value="email@example.com">
+          <input type="password" name="password" id="password">
+          <input type="submit" value="Войти">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
+        <button type="button">2 товара</button>
+        <div>
+          <table>
+            <tr>
+              <td><button>X</button></td>
+              <td><img src="img/item-orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+              <th>Пломбир с апельсиновым джемом</th>
+              <td>1,5 кг x 200 руб.</td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+                <td><button>X</button></td>
+                <td><img src="img/item-strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                <th>Клубничный пломбир с присыпкой из белого шоколада</th>
+                <td>1,5 кг x 200 руб.</td>
+                <td>300 руб.</td>
+              </tr>
+          </table>
+          <div>Итого: 750 руб.</div>
+          <a href="#">Оформить заказ</a>
+        </div>
       </div>
       <p>С 10 до 20 ежедневно</p>
       <p>8 812 450-25-25</p>
@@ -35,9 +69,12 @@
         <div>
           <fieldset>
             <legend>Сортировка:</legend>
-            <ul>
-              <li>по популярности</li>
-            </ul>
+            <select name="sort" id="sort">
+              <option value="popularity" selected>по популярности</option>
+              <option value="inexpensive">сначала не дорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
           </fieldset>
           
           <fieldset>
@@ -50,19 +87,19 @@
             <legend>Жирность:</legend>
             <ul>
               <li>
-                <input type="radio" id="zero">
+                <input type="radio" name="fat" id="zero">
                 <label for="zero">0%</label>
               </li>
               <li>
-                  <input type="radio" id="ten" checked>
+                  <input type="radio" name="fat" id="ten" checked>
                   <label for="ten">до 10%</label>
               </li>
               <li>
-                <input type="radio" id="thirty">
+                <input type="radio" name="fat" id="thirty">
                 <label for="thirty">до 30%</label>
               </li>
               <li>
-                <input type="radio" id="moreThirty">
+                <input type="radio" name="fat" id="moreThirty">
                 <label for="moreThirty">выше 30%</label>
               </li>
             </ul>
