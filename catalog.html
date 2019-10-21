@@ -37,49 +37,49 @@
             </li>
           </ul>
 
-          <ul class="user-navigation user-navigation-catalog">
+          <ul class="user-navigation catalog">
             <li class="user-navigation-item">
               <button class="user-search" type="button"></button>
-              <form class="search visually-hidden" action="#">
+              <form class="search" action="#">
                 <input type="search" name="search" id="search" placeholder="Крем-брюле">
               </form>
             </li>
             <li class="user-navigation-item">
-              <button class="user-entrance" type="button">Вход</button>
-              <form class="entrance visually-hidden" action="#">
-                <input type="email" name="email" id="email" placeholder="email@example.com">
-                <button class="button" type="submit">Войти</button>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-                <input type="password" name="password" id="password">
-              </form>
-            </li>
+                <button class="user-entrance" type="button">Вход</button>
+                <form class="entrance" action="#">
+                  <input type="email" name="email" id="email" placeholder="email@example.com">
+                  <input type="password" name="password" id="password" placeholder="••••••••">
+                  <button class="button" type="submit">Войти</button>
+                  <div>
+                    <p><a href="#">Забыли пароль?</a></p>
+                    <p><a href="#">Новая регистрация</a></p>
+                  </div>
+                </form>
+              </li>
             <li class="user-navigation-item">
-              <button class="user-basket" type="button">2 товара</button>
-              <div class="basket visually-hidden">
-                <table>
-                  <tr>
-                    <td>
-                      <button class="delete-product" type="button">
-                        <span class="visually-hidden">Удалить продукт из корзины</span>
-                      </button>
-                    </td>
-                    <td><img src="img/item-orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                    <th>Пломбир с апельсиновым джемом</th>
-                    <td class="basket-price">1,5 кг x <span>200 руб.</span></td>
-                    <td class="basket-price">300 руб.</td>
-                  </tr>
-                  <tr>
-                      <td><button>X</button></td>
-                      <td><img src="img/item-strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                      <th>Клубничный пломбир с присыпкой из белого шоколада</th>
-                      <td class="basket-price">1,5 кг x <span>300</span> руб.</td>
-                      <td class="basket-price">300 руб.</td>
+              <button class="basket-catalog" type="button">2 товара</button>
+              <div class="basket">
+                  <table>
+                    <tr>
+                      <td><button class="delete-product"></button></td>
+                      <td><img src="img/item-orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                      <th>Пломбир с апельсиновым джемом</th>
+                      <td>1,5 кг x <span>200 руб.</span></td>
+                      <td>300 руб.</td>
                     </tr>
-                </table>
-                <p class="basket-count">Итого: 750 руб.</p>
-                <button class="button" type="submit">Оформить заказ</button>
-              </div>
+                    <tr>
+                        <td><button class="delete-product"></button></td>
+                        <td><img src="img/item-strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                        <th>Клубничный пломбир с присыпкой из белого шоколада</th>
+                        <td>1,5 кг x <span>300 руб.</span></td>
+                        <td>450 руб.</td>
+                      </tr>
+                  </table>
+                  <p class="basket-count">Итого: 750 руб.</p>
+                  <p class="basket-button">
+                    <button class="button" type="submit">Оформить заказ</button>
+                  </p>
+                </div>
             </li>
           </ul>
         </nav>
@@ -191,9 +191,7 @@
                   <p class="catalog-price">310&#8381;<span>/кг</span></p>
                 </div>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -204,11 +202,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">380&#8381;<span>/кг</span></p>
                 </div>
-                <button class="visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -219,11 +214,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">355&#8381;<span>/кг</span></p>
                 </div>
-                <button class="visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -234,11 +226,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">415&#8381;<span>/кг</span></p>
                 </div>
-                <button class="visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -249,11 +238,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">325&#8381;<span>/кг</span></p>
                 </div>
-                <button class="visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -264,11 +250,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">410&#8381; <span>/кг</span></p>
                 </div>
-                <button class=" visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -279,11 +262,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">375&#8381; <span>/кг</span></p>
                 </div>
-                <button class="visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -294,11 +274,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">320&#8381; <span>/кг</span></p>
                 </div>
-                <button class="visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -309,11 +286,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">440&#8381; <span>/кг</span></p>
                 </div>
-                <button class="visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -324,11 +298,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">435&#8381; <span>/кг</span></p>
                 </div>
-                <button class="visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -339,11 +310,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">355 &#8381; <span>/кг</span></p>
                 </div>
-                <button class="visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="catalog-item">
@@ -354,11 +322,8 @@
                 <div class="catalog-container">
                   <p class="catalog-price">420 &#8381; <span>/кг</span></p>
                 </div>
-                <button class="visually-hidden button">Быстрый просмотр</button>
               </div>
-            </a>
-            <a class="catalog-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="catalog-button button">Быстрый просмотр</button>
             </a>
           </li>
         </ul>

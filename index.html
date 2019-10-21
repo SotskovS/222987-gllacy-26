@@ -39,42 +39,24 @@
           <ul class="user-navigation">
             <li class="user-navigation-item">
               <button class="user-search" type="button"></button>
-              <form class="search visually-hidden" action="#">
+              <form class="search" action="#">
                 <input type="search" name="search" id="search" placeholder="Крем-брюле">
               </form>
             </li>
             <li class="user-navigation-item">
               <button class="user-entrance" type="button">Вход</button>
-              <form class="entrance visually-hidden" action="#">
+              <form class="entrance" action="#">
                 <input type="email" name="email" id="email" placeholder="email@example.com">
+                <input type="password" name="password" id="password" placeholder="••••••••">
                 <button class="button" type="submit">Войти</button>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-                <input type="password" name="password" id="password">
+                <div>
+                  <p><a href="#">Забыли пароль?</a></p>
+                  <p><a href="#">Новая регистрация</a></p>
+                </div>
               </form>
             </li>
             <li class="user-navigation-item">
               <button class="user-basket" type="button">Пусто</button>
-              <div class="visually-hidden basket">
-                <table>
-                  <tr>
-                    <td><button>X</button></td>
-                    <td><img src="img/item-orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                    <th>Пломбир с апельсиновым джемом</th>
-                    <td>1,5 кг x <span>200 руб.</span></td>
-                    <td>300 руб.</td>
-                  </tr>
-                  <tr>
-                      <td><button>X</button></td>
-                      <td><img src="img/item-strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                      <th>Клубничный пломбир с присыпкой из белого шоколада</th>
-                      <td>1,5 кг x <span>300</span> руб.</td>
-                      <td>300 руб.</td>
-                    </tr>
-                </table>
-                <p class="basket-count">Итого: 750 руб.</p>
-                <button class="button" type="submit">Оформить заказ</button>
-              </div>
             </li>
           </ul>
         </nav>
@@ -86,21 +68,32 @@
 
       <main class="main-index">
         <h1 class="visually-hidden">Магазин Глейси</h1>
-
-        <section class="first-screen">
-          <div class="slider">
-            <div class="slider-item">
-              <img src="img/ice-promo-1.png" width="647" height="584" alt="Две трубочки мороженого">
-              <div>
-                <p class="slider-title">Крем-брюле и пломбир с малиновым джемом</p>
-                <button class="button slider-button" type="button">Давайте оба!</button>
-              </div>
+          <section class="first-screen">
+            <div class="slider-item" id="slide1">
+              <img src="img/slider-1.png" width="1079" height="854" alt="Две трубочки мороженого">
+            <div>
+              <p class="slider-title">Крем-брюле и пломбир с малиновым джемом</p>
+              <button class="button slider-button" type="button">Давайте оба!</button>
+            </div>
+            </div>
+          <div class="slider-item visually-hidden" id="slide2">
+              <img src="img/slider-2.png" width="1079" height="854" alt="Две трубочки мороженого">
+            <div>
+              <p class="slider-title">Шоколадный пломбир и лимонный сорбет</p>
+              <button class="button slider-button" type="button">Давайте оба!</button>
             </div>
           </div>
-          <div class="slider-controls">
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
+          <div class="slider-item visually-hidden" id="slide3">
+              <img src="img/slider-3.png" width="1079" height="854" alt="Две трубочки мороженого">
+            <div>
+              <p class="slider-title">Пломбир с помадкой и клубничный десерт</p>
+              <button class="button slider-button" type="button">Давайте оба!</button>
+            </div>
+          </div>
+        <div class="slider-controls">
+          <button type="button" class="product-1" id="slide-1"></button>
+          <button type="button" class="product-2" id="slide-2"></button>
+          <button type="button" class="product-3" id="slide-3"></button>
           </div>
         </section>
 
@@ -131,9 +124,7 @@
                   <p class="hits-price">310&#8381;<span>/кг</span></p>
                 </div>
               </div>
-            </a>
-            <a class="hits-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="hits-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="hits-item">
@@ -146,9 +137,7 @@
                   <p class="hits-price">380&#8381;<span>/кг</span></p>
                 </div>
               </div>
-            </a>
-            <a class="hits-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="hits-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="hits-item">
@@ -161,9 +150,7 @@
                   <p class="hits-price">355&#8381;<span>/кг</span></p>
                 </div>
               </div>
-            </a>
-            <a class="hits-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="hits-button button">Быстрый просмотр</button>
             </a>
           </li>
           <li class="hits-item">
@@ -176,9 +163,7 @@
                   <p class="hits-price">415&#8381;<span>/кг</span></p>
                 </div>
               </div>
-            </a>
-            <a class="hits-button" href="#">
-              <button class="button">Быстрый просмотр</button>
+              <button class="hits-button button">Быстрый просмотр</button>
             </a>
           </li>
         </ul>
@@ -209,7 +194,7 @@
           <section class="bg-mail">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не неужной ерунды. Честно=)</p>
             <form action="https://hthmacademy.ru" method="get">
-              <input type="email" name="email" id="email" placeholder="email@example.com">
+              <input type="email" name="email" placeholder="email@example.com">
               <button class="button" type="submit">Отправить</button>
             </form>
           </section>
@@ -218,8 +203,7 @@
     </div>
 
       <section class="map">
-      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123861!2d30.320894615917794!3d59.93879686904811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530907220096"  width="1440" height="416" allowfullscreen></iframe>-->
-      <img src="img/map.jpg" width="1200" height="430" alt="Местонахождение: Санкт-Петербург, ул.Б.Конюшенная, д. 19/8">
+        <img src="img/map.jpg" width="1200" height="430" alt="Местонахождение: Санкт-Петербург, ул.Б.Конюшенная, д. 19/8">
         <div class="contact">
           <h3>Адрес главного офиса <br> и офлайн-магазина</h3>
           <p>ул. Большая Конюшенная <br> 19/8, Санкт-Петербург</p>
@@ -277,17 +261,26 @@
       </div>
     </footer>
 
-
-    <section class="visually-hidden message">
+    <section class="modal modal-write">
       <h2>Мы обязательно вам ответим!</h2>
-      <button>Закрыть</button>
-      <form action="https://htmlacademy.ru" method="get">
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-        <input type="email" name="email" id="email" placeholder="email@example.com">
-        <textarea name="message" id="message" cols="30" rows="10">В свободной форме</textarea>
+      <button class="modal-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <form class="revie-form" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <input class="revie-name" type="text" id="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <input class="revie-mail" type="email" id="mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <textarea class="revie-message" id="letter" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-
     </section>
+
+    <script src="js/modal.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
