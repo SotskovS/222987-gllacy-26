@@ -54,21 +54,14 @@ a {
 }
 
 .main-container {
-  width: 1200px;
+  width: 1146px;
   margin: 0 auto;
-}
-
-header {
-   padding-left: 27px;
 }
 
 .navigation {
   display: flex;
   padding-top: 9px;
-}
-
-.navigation a{
-  height: 64px;
+  margin-bottom: 8px;;
 }
 
 .logo {
@@ -167,29 +160,37 @@ header {
 }
 
 .navigation-catalog li {
-  padding-left: 20px;
   height: 30px;
 }
 
 .navigation-catalog a {
+  display: block;
   color: #323232;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  vertical-align: bottom;
+  height: 25px;
+  padding-top: 7px;
+  padding-left: 19px;
 }
 
-.navigation-catalog li:hover,
-.navigation-catalog li:focus {
+.navigation-catalog a:hover,
+.navigation-catalog a:hover,
+.navigation-catalog a:focus {
   background-color: #fbded7;
 }
 
-.navigation-catalog li:active {
+.navigation-catalog a:active {
   background-color: #f6b5a5;
 }
 
 .navigation-current-page {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
   background-color: #D07058;
+  padding-top: 7px;
+  padding-left: 19px;
 }
 
 .navigation-catalog-novelty {
@@ -198,9 +199,10 @@ header {
   font-size: 14px;
   font-weight: 400;
   font-weight: 700;
+  padding-top: 2px;
+  padding-left: 19px;
   margin-top: 7px;
   margin-bottom: 8px;
-  padding-bottom: 7px;
 }
 
 .navigation-catalog-novelty::after {
@@ -226,12 +228,12 @@ header {
   height: 35px;
   margin-left: auto;
   margin-top: 13px;
-  margin-right: 23px;
+  margin-right: -3px;
   z-index: 1;
 }
 
 .catalog {
-  padding-right: 23px;
+  margin-right: 13px;
 }
 
 .navigation-item a {
@@ -300,7 +302,7 @@ header {
   height: 30px;
   border-radius: 5px;
   left: -309px;
-  margin-top: 2px;
+  margin-top: 1px;
   padding-left: 15px;
   padding-top: 20px;
   padding-bottom: 35px;
@@ -469,29 +471,6 @@ header {
   left: 15px;
 }
 
-
-
-/*.user-navigation-item .user-basket:hover,
-.user-navigation-item .user-basket:focus
-.basket-catalog {
-  position: relative;
-  color: #323232;
-  background-color: #F8F7F4;
-  width: 117px;
-  height: 33px;
-}
-
-.user-basket:hover::before,
-.basket-catalog::before {
-  visibility: visible;
-  position: absolute;
-  content: "";
-  background-image: url(../img/svg/basket-red.svg);
-  background-repeat: no-repeat;
-  top: 7px;
-  left: 16px;
-}
-*/
 .basket {
   display: none;
 }
@@ -600,12 +579,17 @@ header {
   font-size: 14px;
   font-weight: 700;
   text-align: end;
-  margin-top: -18px;
-  margin-right: 27px;
+  margin-top: -12px;
   margin-left: auto;
 }
 
+.worktime-catalog {
+  margin-top: -16px;
+  margin-bottom: 26px;
+}
+
 .worktime p:first-child {
+  margin-top: 3px;
   margin-bottom: 3px;
 }
 
@@ -628,15 +612,14 @@ header {
   background-color: #ffffff;
 }
 
-
-
 .breadcrumbs {
   display: flex;
   list-style: none;
-  padding-left: 6px;
   width: 223px;
   justify-content: space-between;
   margin-bottom: 4px;
+  margin-right: 0px;
+  padding-left: 0;
 }
 
 .breadcrumbs li,
@@ -648,7 +631,6 @@ header {
   color: #ffffff;
   margin-top: 1px;
   margin-left: 0px;
-  margin-right: 0px;
 }
 
 .breadcrumbs .underline {
@@ -663,8 +645,7 @@ header {
 
 .main-catalog {
   width: 1147px;
-  margin-top: -41px;
-  margin-left: 20px;
+  margin-top: -47px;
 }
 
 .main-catalog h1 {
@@ -672,8 +653,11 @@ header {
   font-weight: 700;
   line-height: 41px;
   margin: 0;
-  margin-left: 6px;
   margin-bottom: 25px;
+}
+
+.filters {
+  margin-bottom: 23px;
 }
 
 .filters legend {
@@ -687,7 +671,7 @@ header {
 }
 
 .main-sort {
-  margin-left: 11px;
+  margin-left: 5px;
   margin-right: 3px;
 }
 
@@ -719,6 +703,7 @@ header {
 
 .sort-first {
   display: flex;
+  height:74px;
 }
 
 .range-filter {
@@ -800,6 +785,10 @@ header {
   margin-top: -1px;
 }
 
+.sort-second {
+  margin-left: 7px;
+}
+
 .sort-second legend {
   margin-left: 8px;
 }
@@ -823,7 +812,7 @@ header {
   margin-right: 5px;
 }
 
-.sort-second  ul li:nth-child(2) {
+.sort-second ul li:nth-child(2) {
   margin-right: 7px;
 }
 
@@ -918,7 +907,7 @@ header {
 .first-screen {
   text-align: center;
   margin-top: -36px;
-  margin-bottom: -226px;
+  margin-bottom: -252px;
 }
 
 .slider-item {
@@ -927,21 +916,20 @@ header {
 
 .slider-item img {
   margin-top: -105px;
-  margin-left: 54px;
 }
 
 .slider-controls {
   position: absolute;
   content: "";
   top: 455px;
-  left: 28px;
+  left: 0;
   z-index: 2;
 }
 
 .slider-item div {
   position: absolute;
   top: 229px;
-  left: 249px;
+  left: 222px;
   width: 700px;
 }
 
@@ -991,7 +979,6 @@ header {
 }
 
 .banners {
-  margin-left: 27px;
   margin-top: -42px;
   width: 100%;
   height: 253px;
@@ -1070,7 +1057,6 @@ header {
   height: 1085.7px;
   margin-top: 12px;
   margin-bottom: 30px;
-  margin-left: 5px;
 }
 
 .user-choise {
@@ -1103,7 +1089,7 @@ header {
 .hits {
   width: 1167px;
   margin-bottom: 24px;
-  margin-left: 26px;
+  margin-left: 0;
 }
 
 .hits-item div,
@@ -1209,7 +1195,6 @@ header {
   height: 306px;
   border-radius: 15px;
   margin-top: 23px;
-  margin-left: 27px;
   margin-bottom: 41px;
 }
 
@@ -1308,7 +1293,6 @@ header {
   justify-content: space-between;
   width: 1146px;
   height: 220px;
-  margin-left: 27px;
   margin-bottom: 39px;
 }
 
@@ -1405,23 +1389,14 @@ article a {
 
 .map {
   position: relative;
-  width: 1200px;
+  width: 1250px;
   height: 430px;
   margin: 0 auto;
 }
 
 .map img {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
-  max-width: 1200px;
-  height: 100%;
+  height: auto;
 }
 
 .contact {
@@ -1434,7 +1409,7 @@ article a {
   height: 305px;
   border-radius: 10px;
   top: 63px;
-  right: 26px;
+  right: 51px;
 }
 
 .contact h3 {
@@ -1484,7 +1459,7 @@ article a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 185px;
+  width: 188px;
   list-style: none;
   padding: 0;
 }
@@ -1494,12 +1469,17 @@ article a {
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  padding: 2px 8px;
 }
 
 .first-page {
   color: #ffffff;
   opacity: 0.2;
+  margin-right: 7px;
 }
+
 
 .page-current {
   color: #323232;
@@ -1509,10 +1489,23 @@ article a {
   border-radius: 50%;
 }
 
+.pagination-link a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.pagination-link a:active {
+  background-color: rgba(255, 255, 255, 1.0);
+  color: #323232;
+}
+
+.arrow-right a{
+  padding-right: 2px;
+}
+
 .main-footer {
   margin: 0;
   background: none;
-  min-height: 180px;
   padding-top: 0px;
 }
 
@@ -1785,4 +1778,3 @@ article a {
   padding-bottom: 14px;
   padding-right: 25px;
 }
-
