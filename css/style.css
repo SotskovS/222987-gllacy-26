@@ -51,7 +51,7 @@ a {
 
 .button:active {
   color: #fceeec;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.07)), to(rgba(0, 0, 0, 0.07))), -webkit-gradient(linear, left bottom, left top, from(#F26843), to(#E74A35));
@@ -1209,7 +1209,7 @@ a {
 .hits-item a img,
 .catalog-item a img {
   border-radius: 50%;
-  z-index: 3;
+  z-index: 2;
 }
 
 .hits-price,
@@ -1242,7 +1242,7 @@ a {
   display: block;
   width: calc(100% + 26px);
   height: calc(100% + 68px);
-  background-color: #f8f7f4;
+  background-color: #ffffff;
   opacity: 0.4;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
           box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -1410,7 +1410,7 @@ a {
   width: 560px;
 }
 
-article p {
+.recipes p {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -1420,13 +1420,13 @@ article p {
   margin-bottom: 6px;
 }
 
-article h2 {
+.recipes h2 {
   margin-left: 19px;
   margin-top: 0px;
   width: 300px;
 }
 
-article a {
+.recipes a {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -1499,9 +1499,9 @@ article a {
 
 .map img {
   position: absolute;
-  width: 1250;
+  width: 1200px;
   height: auto;
-  left: -52px;
+  left: -27px;
 }
 
 .contact {
