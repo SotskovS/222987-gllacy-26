@@ -1,5 +1,7 @@
 Личный проект «Gllacy» - интернет магазин доставки мороженного
 
+https://sotskovs.github.io/gllacy/
+
   * HTML5/CSS
   * семантическая верстка
   * JS
